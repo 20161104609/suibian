@@ -14,6 +14,8 @@
 		ED36A1BA2154EF3000D37FA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED36A1B82154EF3000D37FA9 /* LaunchScreen.storyboard */; };
 		ED36A1C52154EF3000D37FA9 /* suibianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36A1C42154EF3000D37FA9 /* suibianTests.swift */; };
 		ED36A1D02154EF3000D37FA9 /* suibianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36A1CF2154EF3000D37FA9 /* suibianUITests.swift */; };
+		ED36A1E42154F21700D37FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED36A1B32154EF2D00D37FA9 /* Main.storyboard */; };
+		ED36A1E52154F21700D37FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED36A1B32154EF2D00D37FA9 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		ED36A1CB2154EF3000D37FA9 /* suibianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = suibianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED36A1CF2154EF3000D37FA9 /* suibianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suibianUITests.swift; sourceTree = "<group>"; };
 		ED36A1D12154EF3000D37FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED36A1E32154F21600D37FA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED36A1E42154F21700D37FA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED36A1E52154F21700D37FA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +302,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				ED36A1B42154EF2D00D37FA9 /* Base */,
+				ED36A1E32154F21600D37FA9 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
