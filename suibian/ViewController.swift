@@ -32,11 +32,11 @@ class ViewController: UIViewController{
         
     }
     
-    var number = 0//判断加减乘除
+    var operation = 0//判断加减乘除
     
     var judge = 0//决定输出数字的位数
     
-    var add = 0
+    var add = 0  //  连续相同的运算
     
     var re = 0//判断result.text前是否存在符号
     
@@ -50,7 +50,7 @@ class ViewController: UIViewController{
             
             result.text = result.text! + "1"
             
-        }
+       }
         
     }
     
@@ -195,6 +195,15 @@ class ViewController: UIViewController{
         
     }
     
+    @IBAction  func del(_ sender: Any) {
+    
+   
+     
+       result_1.text = ""
+        re = 0
+        
+    }
+    
     @IBAction func minus(_ sender: Any) {
         
         if add == 1{
@@ -209,7 +218,7 @@ class ViewController: UIViewController{
             
             result.text = ""
             
-            number = 1
+            operation = 1
             
             re = 1
             
@@ -227,7 +236,7 @@ class ViewController: UIViewController{
                 
                 result.text = ""
                 
-                number = 1
+                operation = 1
                 
                 re = 0
                 
@@ -251,7 +260,7 @@ class ViewController: UIViewController{
             
             result.text = ""
             
-            number = 2
+            operation = 2
             
             re = 1
             
@@ -269,7 +278,9 @@ class ViewController: UIViewController{
                 
                 result.text = ""
                 
-                number = 2
+                operation = 2
+                
+                add = 1
                 
                 re = 0
                 
@@ -293,7 +304,7 @@ class ViewController: UIViewController{
             
             result.text = ""
             
-            number = 3
+            operation = 3
             
             re = 1
             
@@ -311,7 +322,7 @@ class ViewController: UIViewController{
                 
                 result.text = ""
                 
-                number = 3
+                operation = 3
                 
                 re = 0
                 
@@ -337,7 +348,7 @@ class ViewController: UIViewController{
             
             result.text = ""
             
-            number = 4
+            operation = 4
             
             re = 1
             
@@ -355,7 +366,7 @@ class ViewController: UIViewController{
                 
                 result.text = ""
                 
-                number = 4
+                operation = 4
                 
                 re = 0
                 
@@ -367,8 +378,6 @@ class ViewController: UIViewController{
         
     }
     
-    
-    
     @IBAction func equal(_ sender: Any) {
         
         var d:Double
@@ -378,21 +387,21 @@ class ViewController: UIViewController{
         
         c = (result.text! as NSString).doubleValue
         
-        if number == 1 {
+        if operation == 1 {
             
             d = x - c
             
-        }else if number == 2 {
+        }else if operation == 2 {
             
             d = x + c
             
-        }else if number == 3 {
+        }else if operation == 3 {
             
             d = x * c
             
-        }else if number == 4 {
+        }else if operation == 4 {
             
-            d = x / (c)
+            d = x / c
             
         }else {
             
