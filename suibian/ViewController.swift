@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController{
     
-    @IBOutlet weak var result: UITextField!
+    @IBOutlet weak var result: UITextField!//变化的主框
     
     @IBOutlet weak var result_1: UITextField!
     
@@ -195,14 +195,14 @@ class ViewController: UIViewController{
         
     }
     
-    @IBAction  func del(_ sender: Any) {
+    /*@IBAction  func del(_ sender: Any) {
     
-   
+
      
        result_1.text = ""
         re = 0
         
-    }
+    }*/
     
     @IBAction func minus(_ sender: Any) {
         
