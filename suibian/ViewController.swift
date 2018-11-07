@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var sum = 0.0
     var sum1 : Double = 0// 根号控制
     var i = 0 //控制循环
+    var n = 0
     @IBOutlet weak var Display: UITextField!
     
     var re = 0
@@ -147,14 +148,35 @@ class ViewController: UIViewController {
         
         Display.text = String()
         if judge == 0 {
-            Display.text = String(format:"%.1f",sum)
-        }else {
+            Display.text = String(format:"%f",sum)
+            while (Display.text?.last == "0")
+            {
+                 Display.text?.removeLast()
+            }
+            if (Display.text?.last == ".")
+            {
+                Display.text?.removeLast()
+            }
+        }/*else {
             Display.text = String(format:"%d",sum)
-        }
+            if (Display.text?.last == ".")
+            {
+                Display.text?.removeLast()
+            }
+        }*/
     }
     
     @IBAction func button_dot(_ sender: Any) {
-        Display.text = Display.text! + "."
+        if(n==0)
+        {
+            Display.text = Display.text! + "."
+             n=n+1
+        }
+        else
+        {
+            Display.text = Display.text! + ""
+        }
+        
         judge = 0
     }
     @IBAction func clear(_ sender: Any) {
