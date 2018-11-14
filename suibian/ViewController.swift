@@ -167,14 +167,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button_dot(_ sender: Any) {
-        if(n==0)
+        if(Display.text?.last == ".")
         {
-            Display.text = Display.text! + "."
-             n=n+1
+            Display.text = Display.text! + ""
+            
         }
         else
         {
-            Display.text = Display.text! + ""
+            Display.text = Display.text! + "."
         }
         
         judge = 0

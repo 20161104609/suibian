@@ -16,7 +16,6 @@
 		ED36A1D02154EF3000D37FA9 /* suibianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36A1CF2154EF3000D37FA9 /* suibianUITests.swift */; };
 		ED36A1E42154F21700D37FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED36A1B32154EF2D00D37FA9 /* Main.storyboard */; };
 		ED36A1E52154F21700D37FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED36A1B32154EF2D00D37FA9 /* Main.storyboard */; };
-		EDF2C2F32170A1AE00E87D0F /* u=3183058665,1543780721&fm=26&gp=0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDF2C2F22170A1AE00E87D0F /* u=3183058665,1543780721&fm=26&gp=0.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +50,6 @@
 		ED36A1CF2154EF3000D37FA9 /* suibianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suibianUITests.swift; sourceTree = "<group>"; };
 		ED36A1D12154EF3000D37FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED36A1E32154F21600D37FA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		EDF2C2F22170A1AE00E87D0F /* u=3183058665,1543780721&fm=26&gp=0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "u=3183058665,1543780721&fm=26&gp=0.jpg"; path = "../../../Downloads/u=3183058665,1543780721&fm=26&gp=0.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,6 @@
 				ED36A1AF2154EF2D00D37FA9 /* AppDelegate.swift */,
 				ED36A1B12154EF2D00D37FA9 /* ViewController.swift */,
 				ED36A1B32154EF2D00D37FA9 /* Main.storyboard */,
-				EDF2C2F22170A1AE00E87D0F /* u=3183058665,1543780721&fm=26&gp=0.jpg */,
 				ED36A1B62154EF3000D37FA9 /* Assets.xcassets */,
 				ED36A1B82154EF3000D37FA9 /* LaunchScreen.storyboard */,
 				ED36A1BB2154EF3000D37FA9 /* Info.plist */,
@@ -237,7 +234,6 @@
 			files = (
 				ED36A1BA2154EF3000D37FA9 /* LaunchScreen.storyboard in Resources */,
 				ED36A1B72154EF3000D37FA9 /* Assets.xcassets in Resources */,
-				EDF2C2F32170A1AE00E87D0F /* u=3183058665,1543780721&fm=26&gp=0.jpg in Resources */,
 				ED36A1B52154EF2D00D37FA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
