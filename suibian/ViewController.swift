@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var sum = 0.0
     var sum1 : Double = 0// 根号控制
     var i = 0 //控制循环
-    var n = 0
+    var n = 0 //控制小数点
     @IBOutlet weak var Display: UITextField!
     
     var re = 0
@@ -167,22 +167,32 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button_dot(_ sender: Any) {
-        if(Display.text?.last == ".")
+        if Display.text == ""
         {
-            Display.text = Display.text! + ""
+            Display.text = " 0."
             
         }
         else
         {
+            if n==1
+            {
+            Display.text = Display.text
+            
+            }
+           else
+            {
             Display.text = Display.text! + "."
+              n = 1
+            }
         }
-        
         judge = 0
+        
+
     }
     @IBAction func clear(_ sender: Any) {
         
         Display.text = ""
-        
+        n = 0
         re = 0
         
     }
