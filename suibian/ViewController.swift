@@ -169,8 +169,7 @@ class ViewController: UIViewController {
     @IBAction func button_dot(_ sender: Any) {
         if Display.text == ""
         {
-            Display.text = " 0."
-            
+           Display.text = Display.text!+"0."
         }
         else
         {
@@ -198,6 +197,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button_add(_ sender: Any) {
+        n = 0
         let temp = Double(Display.text!)!
         if(i == 0)
         {
@@ -216,6 +216,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func button_minus(_ sender: Any) {
+        n = 0
         let temp = Double(Display.text!)!
         if(i == 0)
         {
@@ -234,6 +235,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func button_multiply(_ sender: Any) {
+        n = 0
         let temp = Double(Display.text!)!
         if(i == 0)
         {
@@ -252,6 +254,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func button_divide(_ sender: Any) {
+        n = 0
         let temp = Double(Display.text!)!
         if(i == 0)
         {
