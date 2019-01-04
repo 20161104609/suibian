@@ -11,7 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //var temp : Double = 0 // y加减乘除转换的
+    // y加减乘除转换的
     var judge = 0
     var flag = 0  //控制加减乘除
     var sum = 0.0
@@ -170,6 +170,7 @@ class ViewController: UIViewController {
         if Display.text == ""
         {
            Display.text = Display.text!+"0."
+             n=1
         }
         else
         {
